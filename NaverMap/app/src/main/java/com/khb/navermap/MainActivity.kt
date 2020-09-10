@@ -1,15 +1,13 @@
 package com.khb.navermap
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.annotation.UiThread
 import androidx.appcompat.app.AppCompatActivity
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.geometry.LatLngBounds
-import com.naver.maps.map.MapFragment
-import com.naver.maps.map.NaverMap
-import com.naver.maps.map.NaverMapOptions
-import com.naver.maps.map.NaverMapSdk
+import com.naver.maps.map.*
 import com.naver.maps.map.NaverMapSdk.NaverCloudPlatformClient
 import com.naver.maps.map.overlay.Marker
 import com.naver.maps.map.overlay.OverlayImage
@@ -45,6 +43,8 @@ class MainActivity : AppCompatActivity() {
             it.mapType = NaverMap.MapType.Navi
             it.isNightModeEnabled = true
             it.setLayerGroupEnabled("LAYER_GROUP_BUILDING", true)
+
+            it.uiSettings.isLocationButtonEnabled = true
 
             setMarker(37.5670135, 126.9783740, it)
         }
