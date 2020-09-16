@@ -16,7 +16,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
-    lateinit var mapFragment: MapFragment
+    private lateinit var mapFragment: MapFragment
+    private lateinit var naverMap: NaverMap
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,10 +39,11 @@ class MainActivity : AppCompatActivity() {
     }
     private fun initMap() {
         mapFragment.getMapAsync {
-            val zoomControlView = findViewById<ZoomControlView>(R.id.zoom)
-            zoomControlView.map = it
             it.mapType = NaverMap.MapType.Navi
             it.isNightModeEnabled = true
+            it.uiSettings.isZoomGesturesEnabled = true
+            it.uiSettings.isZoomControlEnabled = false
+
             it.setLayerGroupEnabled("LAYER_GROUP_BUILDING", true)
 
             it.uiSettings.isLocationButtonEnabled = true

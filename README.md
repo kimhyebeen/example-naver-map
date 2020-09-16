@@ -1,5 +1,8 @@
-# NaverMapProject
+# MapProject
 안드로이드 애플리케이션에 네이버 맵 api 사용해보기
+
+## Diary
+[20.09.16 : 네이버지도 클러스터링 라이브러리 사용법 정리](./diary/200916.md)
 
 ## Reference URL
 * ⭐️[api 사용 설명서](https://docs.ncloud.com/ko/naveropenapi_v3/maps/android-sdk/v3/start.html)
