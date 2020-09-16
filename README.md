@@ -6,7 +6,7 @@
 
 ## Capture - GIF
 * 20.09.16
-<image src='./image/capture01.gif' width=400 />
+<image src='./image/capture01.gif' width=200 />
 
 ## Reference URL
 * ⭐️[api 사용 설명서](https://docs.ncloud.com/ko/naveropenapi_v3/maps/android-sdk/v3/start.html)
