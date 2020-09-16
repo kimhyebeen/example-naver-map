@@ -4,6 +4,10 @@
 ## Diary
 [20.09.16 : 네이버지도 클러스터링 라이브러리 사용법 정리](./diary/200916.md)
 
+## Capture - GIF
+* 20.09.16
+<image src='./image/capture01.gif' width=400 />
+
 ## Reference URL
 * ⭐️[api 사용 설명서](https://docs.ncloud.com/ko/naveropenapi_v3/maps/android-sdk/v3/start.html)
 * ⭐️[네이버 지도 api 안드로이드 설명서](https://navermaps.github.io/android-map-sdk/guide-ko/0.html)
