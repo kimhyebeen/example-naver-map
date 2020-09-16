@@ -1,11 +1,8 @@
 package com.khb.navermap
 
-import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.*
-import com.naver.maps.map.NaverMapSdk.NaverCloudPlatformClient
 import com.naver.maps.map.overlay.Marker
 import com.naver.maps.map.overlay.OverlayImage
 import kotlinx.android.synthetic.main.activity_main.*
@@ -74,9 +71,6 @@ class MainActivity : BaseDemoActivity() {
             naverMap.moveCamera(cameraUpdate)
         }
 
-//        removeAllMarkerButton.setOnClickListener {
-//            tedNaverClustering.clearItems()
-//        }
     }
 
     private fun settingNaverMap() {
